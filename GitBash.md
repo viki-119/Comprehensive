@@ -1,4 +1,4 @@
-# gitBash
+# GitBash
 bash快捷键命令: http://www.2cto.com/os/201310/248101.html  
 粘贴：Fn+Insert   http://jingyan.baidu.com/article/b2c186c8d64f7ec46ef6ff1a.html   
 
