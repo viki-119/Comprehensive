@@ -1,4 +1,4 @@
-# mac
+# Mac
 ##Mac快捷键：
 Command + Delete  删除   
 Command + Shift + Delete  清空垃圾桶   
