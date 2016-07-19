@@ -1,8 +1,11 @@
 # Linux
 
 [Linux 查看进程和删除进程](http://www.cnblogs.com/lucyjiayou/archive/2012/02/24/2366194.html)
-
+[linux中怎么用命令打开文本文件？](http://zhidao.baidu.com/link?url=NfcTZ-nKnMTecC0c_BGHQ24m6A4ZE0xRgKOZdyTctjxKTQ-2goyNR2FWjuSFYbPsh3w-tkvsBM-ZWg1t3Lgjga)
 ###linux常用命令：
+cat :由第一行开始显示文件内容  
+head：只看前几行；  
+tail：只看最后几行；  
 
 vi   以编辑的模式进入文件，如果没有相应的文件名则先创建这个文件，然后编辑模式；(如果不能编辑,按下i键试一下)
 编辑完成按esc键退出然后再输入如下命令；
