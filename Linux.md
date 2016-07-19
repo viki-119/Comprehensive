@@ -21,3 +21,6 @@ cd  ..  是返回上一级目录的意思；
 cp /tmp/xxx.html  ./yyy.html :这个命令的意思是说把tmpt  目录下的xxx.html 文件copy到当前目录下并且把名字改为yyy.html   
 sudo 命令 后面一定要跟绝对路径  
 $PWD 是通配符
+
+mkdir:新建文件夹  
+rm -rf 文件夹名  
