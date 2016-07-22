@@ -1,8 +1,9 @@
 #Git命令
 [git常用命令](http://blog.csdn.net/dengsilinming/article/details/8000622)
 * 打印安装日志到console
-  - npm install --loglevel silly
-# GitBash
+  - npm install --loglevel silly  
+
+#GitBash
 bash快捷键命令: http://www.2cto.com/os/201310/248101.html  
 粘贴：Fn+Insert   http://jingyan.baidu.com/article/b2c186c8d64f7ec46ef6ff1a.html   
 
