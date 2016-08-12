@@ -1,3 +1,6 @@
+      <div>id1: <input type="text" name="" id="id1"></div>
+      <div>id2: <input type="text" name="" id="id2"></div>
+      <div>id3: <input type="text" name="" id="id3"></div>
     <script>
       //  浮点数的精确计算 相加
       function floatAdd(a, b) {
