@@ -6,6 +6,8 @@ Command + Shift + A  转到应用程序目录
 Command + Shift + C  转到COMPUTER目录   
 Command + Shift + H  转到HOME目录  
 Command + F3  回到桌面  相当于window下的 Win + D  
+F3 已经打开的窗口缩小展示在桌面  
+F4 进入launchpad界面  
 Command+shift+F3  回到桌面;  
 Command + option + power  锁屏  相当于 Win + L
 
