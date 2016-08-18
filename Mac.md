@@ -24,7 +24,7 @@ Command + T 新开窗口
 Command + W 关闭当前窗口  
 
 ##Mac使用小窍门
-[Mac如何自定义应用程序的快捷键?](http://www.macx.cn/thread-2133104-1-1.html)Command + option + power  锁屏 Ctrl + shift + power 锁屏 
+[Mac如何自定义应用程序的快捷键?](http://www.macx.cn/thread-2133104-1-1.html)Command + option + power  锁屏 Ctrl + shift + power 锁屏   
 [Mac如何如何配对鼠标?](http://www.pc6.com/edu/80989.html)  
 [Mac电脑快捷锁屏的几种方法?](http://jingyan.baidu.com/article/495ba84107f25538b30ede04.html) Ctrl+ Shift+键盘右上角的开关机键！
 
