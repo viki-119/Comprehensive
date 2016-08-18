@@ -4,11 +4,15 @@
 Command + Shift + Delete  清空垃圾桶   
 Command + Shift + A  转到应用程序目录    
 Command + Shift + C  转到COMPUTER目录   
-Command + Shift + H  转到HOME目录  
+Command + Shift + H  转到HOME目录 
+
+[Mac系统如何一键回到桌面方法一:](http://jingyan.baidu.com/article/2f9b480dbfbdf841cb6cc2b6.html)  
+[Mac系统如何一键回到桌面方法二:](http://bbs.feng.com/read-htm-tid-8127773.html)  
 Command + F3  回到桌面  相当于window下的 Win + D  
+Command+shift+F3  动画渐变回到桌面;  
 F3 已经打开的窗口缩小展示在桌面  
 F4 进入launchpad界面  
-Command+shift+F3  回到桌面;  
+
 Command + option + power  锁屏  相当于 Win + L  
 Ctrl + shift + power 锁屏  相当于 Win + L  
 
