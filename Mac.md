@@ -9,7 +9,8 @@ Command + F3  回到桌面  相当于window下的 Win + D
 F3 已经打开的窗口缩小展示在桌面  
 F4 进入launchpad界面  
 Command+shift+F3  回到桌面;  
-Command + option + power  锁屏  相当于 Win + L
+Command + option + power  锁屏  相当于 Win + L  
+Ctrl + shift + power 锁屏  相当于 Win + L  
 
 Command + 空格  输入法切换;  
 Ctrl + . 切换中英文标点符号;  
@@ -23,7 +24,7 @@ Command + T 新开窗口
 Command + W 关闭当前窗口  
 
 ##Mac使用小窍门
-[Mac如何自定义应用程序的快捷键?](http://www.macx.cn/thread-2133104-1-1.html)  
+[Mac如何自定义应用程序的快捷键?](http://www.macx.cn/thread-2133104-1-1.html)Command + option + power  锁屏 Ctrl + shift + power 锁屏 
 [Mac如何如何配对鼠标?](http://www.pc6.com/edu/80989.html)  
 [Mac电脑快捷锁屏的几种方法?](http://jingyan.baidu.com/article/495ba84107f25538b30ede04.html) Ctrl+ Shift+键盘右上角的开关机键！
 
