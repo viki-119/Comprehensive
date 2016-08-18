@@ -34,5 +34,5 @@ Command + W 关闭当前窗口
 [方法二:](http://blog.csdn.net/fanjunxi1990/article/details/21532655) 
 
 ##与Mac相关的软件
-item2  代替Mac原生终端 工具  
+item2  代替Mac原生终端(terminal) 工具  
 spectacle ：控制窗口显示的方式及方位  https://www.spectacleapp.com/   
