@@ -28,8 +28,7 @@ Command + W 关闭当前窗口
 -- [Mac如何如何配对鼠标?](http://www.pc6.com/edu/80989.html)  
 -- [Mac电脑快捷锁屏的几种方法?](http://jingyan.baidu.com/article/495ba84107f25538b30ede04.html) Command + option + power  锁屏 Ctrl + shift + power 锁屏  
 -- [Mac电脑开机启动项怎么设置 MacBook开机启动项?](http://jingyan.baidu.com/article/c35dbcb0cc8d238916fcbcfb.html)用户与群组  
--- [Mac电脑host文件的位置?](http://jingyan.baidu.com/article/0eb457e50554d603f1a90514.html)第一步请先打开 Mac 系统中的 Finder 应用 第二步按快捷键组合 Shift+Command+G，并输入: /etc/hosts  
-
+-- [Mac电脑host文件的位置?](http://jingyan.baidu.com/article/0eb457e50554d603f1a90514.html)第一步请先打开Mac系统中的Finder应用; 第二步按快捷键组合 Shift+Command+G,并输入: /etc/hosts  
 -- Mac电脑host文件的修改方法:
 [方法一:](http://jingyan.baidu.com/article/72ee561a538655e16038df59.html) 
 [方法二:](http://blog.csdn.net/fanjunxi1990/article/details/21532655) 
