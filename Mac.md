@@ -40,3 +40,4 @@ Command + W 关闭当前窗口
 ##与Mac相关的软件
 item2  代替Mac原生终端(terminal) 工具  
 spectacle ：控制窗口显示的方式及方位  https://www.spectacleapp.com/   
+VLC : 视频播放器  
