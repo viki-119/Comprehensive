@@ -45,3 +45,4 @@ VLC : 视频播放器
 ##数据恢复软件  
 Soft数据恢复mac版(soft data recovery for mac): 需要注册,不好用.  
 EasyRecory for Mac: 需要注册,不好用.  
+Renee 数据恢复: 可以恢复50M的数据.  
