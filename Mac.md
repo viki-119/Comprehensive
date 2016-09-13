@@ -4,7 +4,7 @@
 Command + Shift + Delete  清空垃圾桶   
 Command + Shift + A  转到应用程序目录    
 Command + Shift + C  转到COMPUTER目录   
-Command + Shift + H  转到HOME目录 
+Command + Shift + H  转到HOME目录
 
 [Mac系统如何一键回到桌面方法一:](http://jingyan.baidu.com/article/2f9b480dbfbdf841cb6cc2b6.html)  
 [Mac系统如何一键回到桌面方法二:](http://bbs.feng.com/read-htm-tid-8127773.html)  
@@ -34,13 +34,15 @@ Command + W 关闭当前窗口
 -- [Mac电脑开机启动项怎么设置 MacBook开机启动项?](http://jingyan.baidu.com/article/c35dbcb0cc8d238916fcbcfb.html)用户与群组  
 -- [Mac电脑host文件的位置?](http://jingyan.baidu.com/article/0eb457e50554d603f1a90514.html)第一步请先打开Mac系统中的Finder应用; 第二步按快捷键组合 Shift+Command+G,并输入: /etc/hosts  
 -- Mac电脑host文件的修改方法:
-[方法一:](http://jingyan.baidu.com/article/72ee561a538655e16038df59.html) 
-[方法二:](http://blog.csdn.net/fanjunxi1990/article/details/21532655) 
+[方法一:](http://jingyan.baidu.com/article/72ee561a538655e16038df59.html)
+[方法二:](http://blog.csdn.net/fanjunxi1990/article/details/21532655)  
+-- Mac下如何显示隐藏文件/文件夹:
+[Mac下如何显示隐藏文件/文件夹](http://jingyan.baidu.com/article/36d6ed1f524bf21bcf488331.html)  
 
 ##与Mac相关的软件
 item2  代替Mac原生终端(terminal) 工具  
 spectacle ：控制窗口显示的方式及方位  https://www.spectacleapp.com/   
-VLC : 视频播放器 
+VLC : 视频播放器
 
 ##数据恢复软件  
 Soft数据恢复mac版(soft data recovery for mac): 需要注册,不好用.  
