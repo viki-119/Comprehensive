@@ -4,6 +4,9 @@
 2.租房:  
 青客  安居客  寓见  蘑菇公寓  翰麟公寓   悟空找房  房天下  搜房网
 
+[青客](http://www.qk365.com/)  
+[瀚麟青年公寓](http://shanghai.baixing.com/zhengzu/a450712159.html)
+
 3.娱乐  
 百度视频  
 
