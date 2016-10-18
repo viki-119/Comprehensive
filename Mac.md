@@ -42,7 +42,12 @@ Command + W 关闭当前窗口
 ##与Mac相关的软件
 item2  代替Mac原生终端(terminal) 工具  
 spectacle ：控制窗口显示的方式及方位  https://www.spectacleapp.com/   
-VLC : 视频播放器
+VLC : 视频播放器  
+[mac电脑上安装虚拟机](http://jingyan.baidu.com/article/3c48dd3474527ce10ae35879.html)  
+http://zhidao.baidu.com/link?url=3aLoF1X8prJaH2UrmrU06kbs-vevjr9FRh9KC-6Jy6slnCdYPLHi7Pi6J19hOOVkRuG3mkWhcjbxX1-L1VNknk5S2gduhR_ip5tBOWVzkb3  
+-- [mac上安装虚拟机](http://www.360doc.com/content/13/0528/22/7669533_288882335.shtml)   
+http://www.bubuko.com/infodetail-507743.html  
+
 
 ##数据恢复软件  
 Soft数据恢复mac版(soft data recovery for mac): 需要注册,不好用.  
