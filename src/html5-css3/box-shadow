@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>boxshadow</title>
+    <style>
+        /* box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展半径] [阴影颜色] [投影方式]; 
+            阴影模糊半径：此参数可选，其值只能是为正值，如果其值为0时，表示阴影不具有模糊效果，其值越大阴影的边缘就越模糊；
+            阴影扩展半径：此参数可选，其值可以是正负值，如果值为正，则整个阴影都延展扩大，反之值为负值时，则缩小；
+            注意：inset 可以写在参数的第一个或最后一个，其它位置是无效的。（不写默认是外阴影，写了inset就是内阴影）
+
+        */
+        .boxshadow-outset-one{
+            width:100px;
+            height:100px;
+            box-shadow:4px 4px 6px #666; 
+        }
+        .boxshadow-outset-two{
+            width:100px;
+            height:100px;
+            box-shadow:-4px 4px 6px #666;
+        }
+         .boxshadow-outset-three{
+            width:100px;
+            height:100px;
+            box-shadow:4px -4px 6px #666;
+        }
+        .boxshadow-inset{
+            width:100px;
+            height:100px;
+            box-shadow:4px 4px 6px #666 inset; 
+        }
+        /* 如果添加多个阴影，只需用逗号隔开即可。 */
+        .boxshadow-multi{
+            width:100px;
+            height:100px;
+            box-shadow:4px 2px 6px #f00, -4px -2px 6px #000, 0px 0px 12px 5px #33CC00 inset;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>外阴影一</h2>
+    <div class="boxshadow-outset-one"></div>
+    <h2>外阴影二</h2>
+    <div class="boxshadow-outset-two"></div>
+    <h2>外阴影三</h2>
+    <div class="boxshadow-outset-three"></div>
+    <h2>内阴影</h2>
+    <div class="boxshadow-inset"></div>
+    <h2>多阴影</h2>
+    <div class="boxshadow-multi"></div>
+</body>
+</html>

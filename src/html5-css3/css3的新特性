@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>Gradient</title>
+</head> 
+<body>
+-----------------------------------------------------------------------------------------------------------<br>
+ 下面是与css3选择器相关的效果展示 <br>
+-----------------------------------------------------------------------------------------------------------<br>
+	<style>
+		.box h3{
+		  text-align:center;
+		  position:relative;
+		  top:80px;
+		}
+		.box {
+		  width:70%;
+		  height:200px;
+		  background:#FFF;
+		  margin:40px auto;
+		}
+		.effect{
+		  position:relative;       
+			-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+			   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+					box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		}
+		.effect::before, .effect::after{
+			content:"";
+			position:absolute; 
+			z-index:-1;
+			-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+			-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+			box-shadow:0 0 20px rgba(0,0,0,0.8);
+			top:50%;
+			bottom:0;
+			left:10px;
+			right:10px;
+			-moz-border-radius:100px / 10px;
+			border-radius:100px / 10px;
+		}
+	</style>
+	::before  ::after
+	<div class="box effect">
+		<h3>Shadow Effect </h3>
+	</div>
+   <style>
+        ol > li:nth-child(-n+3){background: green;}
+        ol> :nth-last-child(2){background:red;}
+        ol>:last-child{background: blue;}
+        ol>li:last-child{background: blue;}
+    </style>
+    结构性伪类选择器—nth-child(n) 
+    结构性伪类选择器—nth-last-child(n)
+    <ol>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+      <li>item6</li>
+      <li>item7</li>
+      <li>item8</li>
+      <li>item9</li>
+      <li>item10</li>
+    </ol>
+
+   <style>
+        #brand:target {background: orange;color: #fff;}
+        #jake:target {background: blue;color: #fff;}
+        #aron:target {background: red;color: #fff;}
+    </style>
+    结构性伪类选择器—target
+    <h2><a href="#brand">Brand</a></h2>
+    <div class="menuSection" id="brand">content for Brand</div>
+    <h2><a href="#jake">Brand</a></h2>
+    <div class="menuSection" id="jake">content for jake</div>
+    <h2><a href="#aron">Brand</a></h2>
+    <div class="menuSection" id="aron">content for aron</div>
+
+    <style>
+       #attr a[class^="column"]{background: red;}
+       #attr a[href$="doc"]{background: green;}
+       #attr a[title*="box"]{background: blue;}
+    </style>
+    属性选择器
+    <div id="attr">
+        <a href="##" class="columnNews">我的背景想变成红色</a>
+        <a href="##" class="columnVideo">我的背景想变成红色</a>
+        <a href="##" class="columnAboutUs">我的背景想变成红色</a><br/>
+        <a href="1.doc">我的背景想变成绿色</a>
+        <a href="2.doc">我的背景想变成绿色</a><br/>
+        <a href="##" title="this is a box">我的背景想变成蓝色</a>
+        <a href="##" title="box1">我的背景想变成蓝色</a>
+        <a href="##" title="there is two boxs">我的背景想变成蓝色</a><br>
+    </div>
+    
+-----------------------------------------------------------------------------------------------------------<br>
+ 下面是与css3的颜色，文字，背景相关的效果展示 <br>
+-----------------------------------------------------------------------------------------------------------
+    <style type="text/css">
+        #linear-gradient{
+        width: 600px;height: 150px;line-height: 150px;text-align:center;color: #000;font-size:24px;
+        background-image:linear-gradient(to left, red, orange,yellow,green,blue,indigo,violet);font-family: "MOOC Font";} 
+    </style>
+    <div id="linear-gradient">右下角向左上角的线性渐变背景linear-gradient</div><br>
+
+    <style type="text/css">
+        #ellipsis{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; width:500px; background:#ccc;}
+    </style>
+    <!-- text-overflow只是用来说明文字溢出时用什么方式显示，要实现溢出时产生省略号的效果，
+    还须定义强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden），
+    只有这样才能实现溢出文本显示省略号的效果
+    {text-overflow:ellipsis; overflow:hidden; white-space:nowrap;} -->
+    <div id="ellipsis">text-overflow:ellipsis; overflow:hidden; white-space:nowrap;省略号</div><br>
+
+    <style type="text/css">
+        @font-face{
+            font-family: "MOOC Font";
+            src: url("http://www.imooc.com/Amaranth-BoldItalic.otf");}
+        #font-face{width: 340px;padding: 30px;color: #566F89;background: #000;font-size:58px;font-family: "MOOC Font";}
+    </style>
+    <div id="font-face">@font-face</div><br>
+
+    <style>
+        #text-shadow{width: 400px;padding: 30px;font: bold 55px/100% "微软雅黑";background: #C5DFF8;
+                text-shadow: 2px 2px 10px red;}
+    </style>
+    <div id="text-shadow">text-shadow</div><br>
+    
+    <style>
+        #background-origin {
+            width:220px; border:20px dashed #000; padding:20px; font-weight:bold; color:#000; 
+            background:#ccc url(http://static.mukewang.com/static/img/logo_index.png) no-repeat; 
+            position: relative;
+            background-origin: content-box;}
+        #background-origin span { position: absolute; left:0; top:0;}
+        .content {height:80px; border:1px solid blue;}
+    </style>
+    background-origin: border-box | padding-box | content-box;
+    <div id="background-origin"><span>padding</span>
+        <div class="content">content</div>
+    </div><br>
+    
+    <style>
+        #background-clip {
+            width:220px;border:20px dashed #000; padding:20px; font-weight:bold; color:#000; 
+            background:#ccc url(http://static.mukewang.com/static/img/logo_index.png) no-repeat; 
+            background-origin: border-box;
+            background-clip: ?;
+            position: relative;
+        }
+        #background-clip span {position: absolute; left:0; top:0;}
+    </style>
+    background-clip:border-box | padding-box | content-box | no-clip;
+    <div id="background-clip"><span>padding</span>
+        <div class="content">content</div>
+    </div>
+
+    <style>
+        #multiple-backgrounds{
+            width: 300px;
+            height: 140px;
+            border: 1px solid #999;
+            
+            background-image: url(http://img.mukewang.com/54cf2365000140e600740095.jpg),
+                              url(http://img.mukewang.com/54cf238a0001728d00740095.jpg),
+                              url(http://img.mukewang.com/54cf23b60001fd9700740096.jpg);
+            background-position: left top, 100px 0, 200px 0;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            margin:0 0 20px 0;
+        }
+    </style>
+    multiple-backgrounds
+    <div id="multiple-backgrounds"></div>
+</body>
+</html>

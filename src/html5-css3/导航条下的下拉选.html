@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style type="text/css">
+      .menubar {
+        line-height: 24px;
+      }
+      /* 消除两旁的float对象*/
+      .menubar .menuend {
+        clear: both;
+      }
+      .menuitem {
+        background: #fff;
+        border: 0px solid black;
+        position: relative;
+        float: left;
+        margin-right: 1em;
+        display: inline;
+      }
+      .menuitem .submenu {background: #ccc; border: 1px solid #00c; position: absolute; top: 25px; left: -1px; width: 5em;}
+      /** 下面的控制显示和隐藏 **/
+      .menuitem .submenu {display: none;}
+      .menuitem:hover .submenu {display: block;}
+  </style>
+</head>
+<div class="menubar">
+    <div class="menuitem">
+      <div>菜单1</div>
+      <div class="submenu">
+          <div>子菜单1</div>
+          <div>子菜单2</div>
+      </div>
+    </div>
+    <div class="menuitem">
+      <div>菜单2</div>
+      <div class="submenu">
+          <div>子菜单1</div>
+          <div>子菜单2</div>
+          <div>子菜单3</div>
+      </div>
+    </div>
+    <div class="menuend"></div>
+</div>
+<script>
+  // document.getElementsByClassName('menubar')[0].getElementsByClassName('menuitem')[0].onclick=function() {
+  //   if (this.getElementsByClassName('submenu')[0].style.display=='block'){
+  //     this.getElementsByClassName('submenu')[0].style.display='none'
+  //   } else {
+  //     this.getElementsByClassName('submenu')[0].style.display='block'
+  //   }
+  // }
+</script>
+</html>

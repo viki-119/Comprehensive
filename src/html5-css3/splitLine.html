@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>splitLine</title>
+  </head>
+  <style>
+    body {
+      left:0px;
+      margin:0px;
+
+    }
+    .content {
+      margin:0 auto;
+      width:1000px;
+    }
+    .sub-title{
+      line-height: 30px;
+      position: relative;
+      height: 30px;
+      font-size: 12px;
+    }
+    .sub-title .sub-title-icon{
+      position: absolute;
+      background: red;
+      width: 7px;
+      height: 15px;
+      top: 7px;
+    }
+    .sub-title .sub-title-text{
+      position: absolute;
+      left: 5px;
+      background: white;
+      z-index: 2;
+      padding: 0 10px;
+    }
+    .sub-title .sub-title-line{
+      position: absolute;
+      left: 15px;
+      border: 1px dotted red;
+      width: 100%;
+      top: 14px;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <div class="">haha</div>
+      <h2 class="sub-title">
+        <div class="sub-title-icon"></div>
+        <span class="sub-title-text">列表</span>
+        <div class="sub-title-line"></div>
+      </h2>
+      <div class="">haha</div>
+      <div class="">haha</div>
+      <h2 class="sub-title">
+        <div class="sub-title-icon"></div>
+        <span class="sub-title-text">列表</span>
+        <div class="sub-title-line"></div>
+      </h2>
+      <div class="">haha</div>
+    </div>
+  </body>
+</html>

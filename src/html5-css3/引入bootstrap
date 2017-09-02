@@ -1,0 +1,70 @@
+<!doctype html>
+<html ng-app="scopeExample">
+    <head>
+    	<meta charset="utf-8">
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="./bootstrap.min.css">
+        <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+    </head>
+    <body>
+    	<div class="panel panel-primary">
+    		<div class="panel-heading">
+    			<div class="panel-title">
+    				双向数据绑定
+    			</div>
+    		</div>
+    		<div class="panel-body">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<form class="form-horizontal" role="form">
+    						<div class="form-group">
+    							<label class="col-md-2 control-label">
+    								邮箱：
+    							</label>
+    							<div class="col-md-2">
+    								<input type="text" class="form-control" placeholder="推荐使用126邮箱" />
+    							</div>
+    						</div>
+    						<div class="form-group">
+    							<label class="col-md-2 control-label">密码：</label>
+    							<div class="col-md-2">
+    								<input type="password" class="form-control" placeholder="请输入数字，字母，下划线" />
+    							</div>
+    						</div>
+    						<div class="form-group">
+    							<div class="col-md-offset-2 col-md-2">
+    								<div class="checkbox">
+    									<label for="">
+    										<input type="checkbox" />
+    									</label>
+    								</div>
+    							</div>
+    						</div>
+    					</form>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+		<div ng-controller="MyController">
+		  Your name:
+			<input type="text" ng-model="username">
+			<button ng-click='sayHello()'>greet</button>
+		 	<hr>
+		 	<div class="group">
+				<input type="text" value={{greeting}}>
+		 		
+		 	</div>
+		</div>
+
+		<script>
+			var app=angular.module('scopeExample',[]);
+			app.controller('MyController',['$scope',function($scope){
+				$scope.username="lucy";
+				$scope.sayHello=function(){
+					$scope.greeting='hello'+$scope.username+'!';
+				}
+			}]);
+		</script>
+    </body>
+</html>

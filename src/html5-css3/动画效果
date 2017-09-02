@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>//注意每个图片的大小为600px *700px
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>transform</title>
+<style type="text/css">
+body,figure,figcaption,p,h2,img{margin:0;padding:0}
+/* 在css中父容器相对定位的时候，子容器的绝对定位就会相对于父容器来定位； */
+figure{position:relative;width:33.33%;overflow:hidden;height:500px;float:left;}
+figcaption{position:absolute;top:0px;left:0px;color:white;font-family:"微软雅黑";}
+figure img{opacity:0.8;transition:all 0.35s}/* 给所有的figure下的图片 */
+figure figcaption p,h2,span,div{transition:all 0.35s;}
+
+.test1{background:#2f0000;}
+.test1 figcaption{padding:20px;}
+.test1 figcaption p{transform:translate(-200px,0px);width:150px;background:#fff;color:#333;margin:3px;text-align:center;}
+.test1 figcaption p:nth-of-type(1){transition-delay:0.05s}	/* 数组  设置延时 */
+.test1 figcaption p:nth-of-type(2){transition-delay:0.1s}	/* 数组  设置延时 */
+.test1 figcaption p:nth-of-type(3){transition-delay:0.15s}	/* 数组  设置延时 */
+.test1:hover figcaption p{transform:translate(0px,0px)}
+.test1:hover img{transform:translate(-50px,0px);opacity:0.5}
+
+.test2{background:#030;}
+.test2 figcaption{width:100%;height:100%;}
+.test2 figcaption h2{margin-left:15%;margin-top:15%;}
+.test2 figcaption p{margin-left:15%;transform:translate(0px,50px);opacity:0;}
+.test2 figcaption div{border:2px solid #fff;width:80%;height:80%;position:absolute;top:10%;left:10%;
+transform:translate(0px,-460px) rotate(0deg);}
+.test2:hover figcaption div{transform:translate(0px,0px) rotate(360deg)}
+.test2:hover img{opacity:0.5;}
+.test2:hover figcaption p{transform:translate(0px,0px);opacity:1;}
+
+.test3{background:blue;}
+.test3:hover img{background:grey;opacity:0.5;}
+.test3 figcaption{top:30%;left:15%;}
+.test3 figcaption h2{transform:skew(90deg);}
+.test3 figcaption p{transform:skew(90deg);}
+.test3:hover figcaption h2{transform:skew(0deg);transition-delay:0.2s;}
+.test3:hover figcaption p{transform:skew(0deg);}
+
+.test4{background:black;}
+.test4 figcaption h2{margin-top:15%;margin-left:15%;transform:scale(1.2,1.2);opacity:0;}
+.test4 figcaption p{margin-top:5px;margin-left:15%;transform:scale(1.2,1.2);opacity:0;}
+.test4:hover figcaption h2{transform:skew(0deg);transform:scale(1,1);opacity:1;}
+.test4:hover figcaption p{transform:skew(0deg);transform:scale(1,1);opacity:1;}
+.test4 figcaption{width:100%;height:100%;}
+.test4 figcaption div{border:2px solid #fff;width:80%;height:80%;position:absolute;top:10%;left:10%;
+transform:scale(1.2,1.2);opacity:0;}
+.test4:hover figcaption div{transform:scale(1,1);opacity:1;}
+.test4:hover img{transform:scale(1.2,1.2);}
+
+.test5{background:blue;}
+.test5:hover{transition:all 0.35s;transform:rotate(-30deg);}
+
+.test6{background:blue;}
+.test6 figcaption{width:100%;height:100%;}
+#div1{border-left:1px solid #fff;border-right:1px solid #fff;width:80%;height:20%;position:absolute;top:40%;left:10%;opacity:0;}
+#div2{border-top:1px solid #fff;border-bottom:1px solid #fff;width:20%;height:80%;position:absolute;top:10%;left:40%;opacity:0;}
+.test6:hover #div1{transition:all 1s;transform:scale(1,4.5);opacity:1}
+.test6:hover #div2{transition:all 1s;transform:scale(4.5,1);opacity:1}
+.test6:hover img{transition:all 1s;transform:scale(1.7,1.7);}
+
+@media screen  and (max-width:600px){/* 当窗口大小小于600px;100%显示; */
+	figure{width:100%}
+}
+@media screen and (min-width:601px) and (max-width:1000px){
+	figure{width:50%}
+}
+@media screen and (min-width:1001px){/* 当窗口大小大于1001px;33.33%显示; */
+	figure{width:33.33%}
+}
+</style>
+</head>
+<body>
+	<!-- figure 标签 是html5的新标签（语义化标签），用于规定独立的流内容（图片，图表，照片，代码等等）
+	好处：便于搜索引擎识别 -->
+	<figure class="test1">
+		<img src="yuting1.jpg"/>
+		<!-- figcaption标签，html5语义化标签，与figure配套使用，用于标签定义figure元素的标题 -->
+		<figcaption>
+			<h2>夕阳下的雨婷显得格外的美丽</h2>
+			<p>嘿嘿：我很喜欢</p>
+			<p>嘿嘿：我很喜欢</p>
+			<p>嘿嘿：我很喜欢</p>
+		</figcaption>
+	</figure>
+	<figure class="test2">
+		<img src="yuting2.jpg"/>
+		<figcaption>
+			<h2>伟哥哥心中永远的螃蟹公主</h2>
+			<p>哈哈：你同意吗？</p>
+			<div></div>
+		</figcaption>
+	</figure>
+	<figure class="test3">
+		<img src="yuting3.jpg"/>
+		<figcaption>
+			<h2>三个手指头，雨婷永远的标志</h2>
+			<p>嘻嘻：好特别哦！！！</p>
+		</figcaption>
+	</figure>
+	<figure class="test4">
+		<img src="yuting4.jpg"/>
+		<figcaption>
+			<h2>这个也是你的标志性动作</h2>
+			<p>吼吼：我很喜欢</p>
+			<div></div>
+		</figcaption>
+	</figure>
+	<figure class="test5">
+		<img src="yuting5.jpg"/>
+		<figcaption>
+			<h2>雨婷o(≧v≦)o~~好棒</h2>
+			<p>呼呼：棒</p>
+		</figcaption>
+	</figure>
+	<figure class="test6">
+		<img src="yuting6.jpg"/>
+		<figcaption>
+			<h2>雨婷o(≧v≦)o~~好棒</h2>
+			<div id="div1"></div>
+			<div id="div2"></div>
+		</figcaption>
+	</figure>
+	<embed src="我希望.mp3" />
+</body>
+</html>
