@@ -1,0 +1,33 @@
+addEventListener 与onclick的区别：http://www.jb51.net/article/49858.htm
+http://zhidao.baidu.com/link?url=Dq7_dk5VEOKZ_NyRGvN3WxECWfnBYufcap
+z5th6oh-JEopXLyZDV3ikboeogmNac48DDoLt6NrR5o9oL_xdUjBaXbcaLo4_1yelSRNRc95_
+
+<!doctype html>
+<html ng-app="scopeExample">
+    <head>
+    	<meta charset="utf-8">
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="./bootstrap.min.css">
+        <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+    </head>
+    <body>
+  		<div id="divContent">content</div>
+		<br>
+		<input type="text" id="inputContent" value="inputcontent">
+		<script>
+		    var divContent=document.getElementById('divContent');
+		    divContent.addEventListener('click',function(event){
+		//        下面的两行代码时等效的
+		        console.log(event.target.innerHTML);
+		        console.log(divContent.innerHTML)
+		    });
+		
+		    var inputContent=document.getElementById("inputContent");
+		    inputContent.addEventListener('change',function(event){
+		//        下面的两行代码时等效的
+		        console.log(event.target.value);
+		        console.log(inputContent.value)
+		    });
+		</script>
+    </body> 
+</html>

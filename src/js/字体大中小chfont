@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>transform</title>
+<script>
+	function chfont(index){
+	var art=document.getElementsByTagName("div")[0];
+	art.style.fontSize=index+"px";
+	}
+</script>
+<style type="text/css">   
+	div{font-size:14px;}
+</style>
+</head>
+<body>
+	<div>据英国《镜报》报道，奥德特靠拍摄自己被大码模特狂压的视频，已经累计挣到12.5万英镑（约合14.12万美元）。奥德特表示，虽然这份工作有些怪异又危险，但她本人十分喜欢。
+“我知道这听起来有些奇怪，但我喜欢被压，”奥德特说，“这很刺激，也是一种挑战。它也有助于帮我克服幽闭恐惧症。”
+这个身高只有1米5，体重只有40公斤的娇小女孩有时候会被五个身形巨大的模特压在下面，她们总重大约800千克。不过她们之间的默契也越来越好，只需要小小的示意，她们就知道这个小姑娘的安全底线了。
+奥德特也非常注意保护自己的身体，并经常锻炼。因为在拍摄过程中，有时候她不得不憋气，为了延长屏息时间，她会选择游泳来进行呼吸锻炼。
+“我很感激我现在的工作。”奥德特最后说道。
+想象一下，被这样五个大码模特压在身下的感觉，大家感受一下吧。</div>
+<input type="button" value="大" onclick="chfont(16)">
+<input type="button" value="中" onclick="chfont(14)">
+<input type="button" value="小" onclick="chfont(12)">
+</body>
+</html>

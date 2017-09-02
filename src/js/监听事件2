@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="d1">d1
+    <button id="d2">
+        d2
+    </button>
+</div>
+<script>
+    //按下边的方法绑定事件，当点击d2的时候console的顺序是 d2 clicked，d1 clicked
+    //第三个参数是false，是绑定在冒泡阶段
+    // document.getElementById('d1').addEventListener('click', function(){
+    //     console.log('d1 clicked');
+    // }, false);
+    // document.getElementById('d2').addEventListener('click', function(){
+    //     console.log('d2 clicked');
+    // }, false);
+    //按下边的方法绑定事件，当点击d2的时候console的顺序是 d1 clicked，d2 clicked
+    //第三个参数是true，是绑定在捕获阶段
+    document.getElementById('d1').addEventListener('click', function(){
+        console.log('d1 clicked');
+    }, true);
+    document.getElementById('d2').addEventListener('click', function(){
+        console.log('d2 clicked');
+    }, false);
+</script>
+</body>
+</html>

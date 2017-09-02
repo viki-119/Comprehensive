@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>validationJs.html</title>
+	<script language="JavaScript">
+		window.onload=function(){
+			document.getElementById("ok").onclick=function(){
+/**************************************************************************/
+				/* <tr>
+					<td>真实姓名（不能为空，没有其他要求）</td>
+					<td><input type="text" name="realname" id="realname" /></td>
+				</tr> */
+				var realname=document.getElementById("realname").value;
+				if(realname==""||realname=="null"||realname=="undefined"){
+					alert("真实姓名不能为空");
+					document.getElementById("realname").focus();
+					return false;
+				}
+/**************************************************************************/
+				/* <tr> A-Z a-z 0-9  
+					<td>登录名（登录名不能为空，长度应该在5-8之间，可以包含中文字符（一个汉字算一个字符））</td>
+					<td><input type="text" name="username" id="username" /></td>
+				</tr> */
+				var username=document.getElementById("username").value;
+				if(username==""||username=="null"||username=="undefined"){
+					alert("登录名不能为空");
+					document.getElementById("username").focus();
+					return false;
+				}
+				
+				//验证登录名的长度不能少于5个
+				var pattern=new RegExp("^[A-Za-z0-9\u4e00-\u9fa5]{0,4}$");
+				var flag=pattern.test(username);
+				//alert(flag);
+				if(flag){
+					alert("您输入的登录名不能少于5个字符");
+					document.getElementById("username").value="";
+					document.getElementById("username").focus();
+					return false;
+				}
+				
+				//验证登录名的长度不能大于8个字符
+				pattern=/^[A-Za-z0-9\u4e00-\u9fa5]{9,}$/;
+				flag=pattern.test(username);
+				if(flag){
+					alert("您输入的登录名不能大于8个字符");
+					document.getElementById("username").value="";
+					document.getElementById("username").focus();
+					return false;
+				}
+/**************************************************************************/
+ 				/* <tr>
+					<td>密码（密码不能为空，长度6-12字符或数字，不能包含中文字符）</td>
+					<td><input type="password" name="psw" id="psw" style="width:120px;"/></td>
+				</tr> */
+				var psw=document.getElementById("psw").value;
+				if(psw==""||psw==null||psw==undefined){
+					alert("密码不能为空");
+					document.getElementById("psw").focus();
+					return false;
+				}
+				//验证密码长度不能小于6字符
+				var pattern=/^[a-zA-Z0-9\u4e00-\u9fa5]{0,5}$/;
+				if(pattern.test(psw)){
+					alert("密码长度不能小于6个");
+					document.getElementById("psw").value="";
+					document.getElementById("psw").focus();
+					return false;
+				}
+				//验证密码长度不能大于12字符
+				var pattern=/^[a-zA-Z0-9\u4e00-\u9fa5]{13,}$/;
+				if(pattern.test(psw)){
+					alert("密码长度不能大于12个");
+					document.getElementById("psw").value="";
+					document.getElementById("psw").focus();
+					return false;
+				}
+				
+/**************************************************************************/
+				/* <tr>
+					<td>重复密码（不能为空，长度6-12字符或数字，不能包含中文字符）</td>
+					<td><input type="password" name="psw2" id="psw2" style="width:120px;"/></td>
+				</tr> */
+				var psw2=document.getElementById("psw2").value;
+				if(psw2!=psw){
+					alert("您两次输入的密码不一致");
+					document.getElementById("psw2").focus();
+					return false;
+				}
+/**************************************************************************/
+			/* <tr>
+				<td>性别（必选其一）</td>
+				<td><input type="radio" name="gender" id="gender_male" value="m" />男
+				<input type="radio" name="gender" id="gender_female" value="f" />女</td>
+			</tr> */
+			var flag=false;  //true表示有选中的，false表示无选中的
+			var genderElements=document.getElementsByName("gender");
+			for(var i=0;i<genderElements.length;i++){
+				if(genderElements[i].checked){
+					flag=true;
+					break;
+				}
+			}
+			if(!flag){
+				alert("性别必选");
+				return false;
+			}
+/**************************************************************************/
+			/* <td>
+				<input type="checkbox" name="hobby" id="basketball" value="b" />篮球
+				<input type="checkbox" name="hobby" id="football" value="f" />足球
+				<input type="checkbox" name="hobby" id="pingpang" value="p" />乒乓球
+			</td> */
+			var hobbys=document.getElementsByName("hobby");
+			var res=0;
+			for(var i=0;i<hobbys.length;i++){
+				//res=hobbys[i].checked||res;
+				if(hobbys[i].checked){
+					res+=1;
+				}
+			}
+			if(res<2){
+				alert("hobby至少选两个")
+				return false;
+			}
+/**************************************************************************/
+			/* <tr>
+				<td>身份证（15或18位）</td>
+				<td><input type="text" name="cart" id="cart" size=20 value=""></td>
+			</tr> */
+			var cartValue=document.getElementById("cart").value;
+			if(cartValue==""||cartValue==null||cartValue==undefined){
+				alert("身份证号不能为空");
+				document.getElementById("cart").focus();
+				return false;
+			}
+			var len=cartValue.length;
+			if(len!=15 && len!=18){
+				alert("您的身份证输入有误");
+				document.getElementById("cart").value="";
+				document.getElementById("cart").focus();
+				return false;
+			}
+			if(len==15){
+				//验证身份证号是15位
+				var pattern=/^\d{15}$/;
+				if(!pattern.test(cartValue)){
+					alert("15位身份证输入有误");
+					document.getElementById("cart").value="";
+					document.getElementById("cart").focus();
+					return false;
+				}
+			}
+			if(len==18){
+				//验证身份证号是18位
+				var pattern=/^\d{17}[X]{1}|\d{18}$/;
+				if(!pattern.test(cartValue)){
+					alert("18位身份证输入有误");
+					document.getElementById("cart").value="";
+					document.getElementById("cart").focus();
+					return false;
+				}
+			}
+/**************************************************************************/
+			}
+		};
+	</script>
+</head>
+<body>
+	<form action="">
+		<table border="1">
+			<tr>
+				<td>真实姓名（不能为空，没有其他要求）</td>
+				<td><input type="text" name="realname" id="realname" /></td>
+			</tr>
+			<tr>
+				<td>登录名（登录名不能为空，长度应该在5-8之间，可以包含中文字符（一个汉字算一个字符））</td>
+				<td><input type="text" name="username" id="username" /></td>
+			</tr>
+			<tr>
+				<td>密码（密码不能为空，长度6-12字符或数字，不能包含中文字符）</td>
+				<td><input type="password" name="psw" id="psw" style="width:120px;"/></td>
+			</tr>
+			<tr>
+				<td>重复密码（不能为空，长度6-12字符或数字，不能包含中文字符）</td>
+				<td><input type="password" name="psw2" id="psw2" style="width:120px;"/></td>
+			</tr>
+			<tr>
+				<td>性别（必选其一）</td>
+				<td><input type="radio" name="gender" id="gender_male" value="m" checked="checked"/>男
+				<input type="radio" name="gender" id="gender_female" value="f"/>女</td>
+			</tr>
+			<tr>
+				<td>爱好（至少选两个）</td>
+				<td>
+					<input type="checkbox" name="hobby" id="basketball" value="b" />篮球
+					<input type="checkbox" name="hobby" id="football" value="f" />足球
+					<input type="checkbox" name="hobby" id="pingpang" value="p" />乒乓球
+				</td>
+			</tr>
+			<tr>
+				<td>身份证（15或18位）</td>
+				<td><input type="text" name="cart" id="cart" size=20 value=""></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="button" name="ok" id="ok" value="保存"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

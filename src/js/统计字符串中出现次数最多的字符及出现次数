@@ -1,0 +1,27 @@
+<script>
+    var str='我爱你爱你好好呵呵呵';//原型字符串。
+    for(var t in str){//如果str里存的是字符串，则 t是指索引
+//        console.log(t);
+    }
+    var obj={};//把str里的每一个字符都抽取出来放在obj对象里，后续会对该对象进行操作。
+    var i,l=str.length,k;
+    for(i=0;i<str.length;i++){
+        k=str.charAt(i);//获取str里的每一个字符串。把获得的字符串作为key存储在obj对象里。
+        if(obj[k]){
+            obj[k]++;//统计出obj对象里的没有key对应的value。
+        }else{
+            obj[k]=1;
+        }
+    }
+    var m=0;//用于存放出现次数最多字符的出现次数。
+    var j=null;//用于存放出现次数最多的字符。
+    var max={};
+    for(var n in obj){
+//      console.log(n);
+        if(obj[n]>m){//如果obj是一个对象且里面有key和value,则n指代什么事根据存储的对象决定的
+            m=obj[n];
+            j=n;
+        }
+    }
+    alert("出现次数最多的字符是:"+j+";"+"出现的次数是："+m);
+</script>

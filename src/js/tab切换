@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>js特效tab切换</title>
+<script type="text/javascript">
+	function t1(pid){
+		var ps=["mil","news","people","tech"];
+		var len=ps.length;
+		for(var i=0;i<len;i++){
+			if(ps[i]==pid){
+				document.getElementById(pid).style.display="block";
+			}else{
+				document.getElementById(ps[i]).style.display="none";
+			}
+		}
+	}
+</script>
+<style type="text/css">
+li{
+	float:left;
+	list-style:none;
+	margin:5px;
+}
+ul{
+	width:200px;
+	height:30px;
+}
+p{
+	height:200px;
+	width:250px;
+	border:solid 1px blue;
+}
+#news,#people,#tech{
+	display:none;
+}
+</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li onmouseover="t1('mil')">军事</li>
+			<li onmouseover="t1('news')">新闻</li>
+			<li onmouseover="t1('people')">人物</li>
+			<li onmouseover="t1('tech')">科技</li>
+		</ul>
+		<p id="mil" >军事</p>
+		<p id="news">新闻</p>
+		<p id="people">人物</p>
+		<p id="tech">科技</p>
+	</div>
+</body>
+</html>

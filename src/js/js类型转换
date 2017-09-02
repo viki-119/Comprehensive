@@ -1,0 +1,58 @@
+js字符串转数字  ：http://www.ablanxue.com/prone_14265_1.html
+parseInt(string) ： 函数从string的开始解析，返回一个整数。  
+举例：parseInt('123') : 返回 123（int）；  
+parseInt('1234xxx') : 返回 1234（int）；  
+如果解析不到数字，则将返回一个NaN的值，可以用isNaN()函数来检测；
+var i = parseInt('abc');
+if (isNaN(i))
+{
+  alert('NaN value');
+}
+同样的parseFloat函数是将字符串转换成浮点数。
+
+js数字转字符串  
+将数字转换成字符串，得用到String类的toString方法
+var i = 10;
+var s = i.toString();
+alert(typeof s); //将输出 String
+
+
+数组的相关方法：http://fp-moon.iteye.com/blog/1186924
+js数组与字符串的相互转换方法
+需要将数组元素用某个字符连接成字符串，示例代码如下：
+var a, b;
+a = new Array(0,1,2,3,4);
+b = a.join("-");
+
+字符串转数组：
+实现方法为将字符串按某个字符切割成若干个字符串，并以数组形式返回，示例代码如下：
+var s = "abc,abcd,aaa";
+ss = s.split(",");// 在每个逗号(,)处进行分解。
+
+
+javascript报错：Missing radix parameter。
+
+parseInt的第二个参数有四种:2、8、10、16，分别对应二进制、八进制、十进制、十六进制；
+默认是:十进制；
+在转换时可以忽略第二个参数，这样js照样可以运行，但是在你进行语法校验时，JSLint却会报错，
+这是因为压缩工具对语法的严谨性要求比较高，建议大家在用parseInt语法进行转换时，最好加个第二个参数；
+
+
+js实现的数字每隔三位加一个逗号
+var cutStr=function(str){  
+  var newStr=new Array(str.length+parseInt(str.length/3));   
+  var strArray=str.split("");
+  newStr[newStr.length-1]=strArray[strArray.length-1];   
+  var currentIndex=strArray.length-1;   
+  for(var i=newStr.length-1;i>=0;i--){   
+    if((newStr.length-i)%4==0){   
+      newStr[i]=",";   
+    }  
+    else{   
+      newStr[i]=strArray[currentIndex--];   
+    }   
+  }   
+  return newStr.join("")   
+}  
+var num=18000; 
+console.log(cutStr(num+""));

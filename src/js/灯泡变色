@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function changeImage(){
+	var element=document.getElementById('myimage');
+	if (element.src.match('aa')){
+		element.src="bb.gif";
+	}else if(element.src.match('bb')){
+		element.src="cc.gif";
+	}else if(element.src.match('cc')){
+		element.src="dd.gif";
+	}else if(element.src.match('dd')){
+		element.src="ee.gif";
+	}else if(element.src.match('ee')){
+		element.src="gg.gif";
+	}else if(element.src.match('gg')){
+		element.src="ff.gif";
+	}else{
+		element.src="aa.gif";
+	}
+}
+</script>
+<img id="myimage" onclick="changeImage()" src="aa.gif">
+<p>点击灯泡来点亮或熄灭这盏灯</p>
+</body>
+</html>

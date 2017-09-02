@@ -1,0 +1,83 @@
+/******************************************************************************************************************/
+1.javascript 中 offsetWidth 是对象的可见宽度，包滚动条等边线，会随窗口的显示大小改变
+
+clientWidth、offsetWidth、clientHeight区别
+IE6.0、FF1.06+：
+offsetWidth = width + padding + border
+offsetHeight = height + padding + border
+IE5.0/5.5：
+offsetWidth = width
+offsetHeight = height
+offsetwidth:是元素相对父元素的偏移宽度。等于border+padding+width
+
+2.在javascript中scrollLeft代表什么意思？
+有两个值一个是：scrollTop一个是scrollLeft
+第一个代表页面利用滚动条滚动到下方时，隐藏在滚动条上方的页面的高度；
+第二个代表页面利用滚动条滚动到右侧时，隐藏在滚动条左侧的页面的宽度
+/******************************************************************************************************************/
+
+<html>  
+<head>  
+<title></title>  
+<style type="text/css">  
+	<!--  
+	#demo {  
+		background: #FFF;  
+		overflow:hidden;  
+		border: 1px dashed #CCC;  
+		width: 1000px;  
+		height:200px;  
+		margin:0 auto;
+	}  
+	#demo img {  
+		border: 1px solid #F2F2F2;  
+	}  
+	#indemo {  
+		float: left;  
+		width: 1000%;  
+	}  
+	#demo1 {  
+		float: left;  
+	}  
+	#demo2 {  
+		float: left;  
+	}  
+	-->  
+</style>  
+</head>  
+<body style="margin:0 auto;">  
+
+<div id="demo">  
+	<div id="indemo">  
+		<div id="demo1">
+			<a href=""><img src="images/1.gif" border="0" width="160" height="200"/></a>
+			<a href=""><img src="images/1.gif" border="0" width="160" height="200"/></a>
+			<a href=""><img src="images/1.gif" border="0" width="160" height="200"/></a>
+			<a href=""><img src="images/1.gif" border="0" width="160" height="200"/></a>
+			<a href=""><img src="images/1.gif" border="0" width="160" height="200"/></a>
+			<a href=""><img src="images/1.gif" border="0" width="160" height="200"/></a>
+		</div>  
+		<div id="demo2"></div>  
+	</div>  
+</div>  
+
+<script>
+	var speed=15;  
+	var tab=document.getElementById("demo");  
+	var tab1=document.getElementById("demo1");  
+	var tab2=document.getElementById("demo2");  
+
+	tab2.innerHTML=tab1.innerHTML;  
+	function Marquee(){  
+		if(tab2.offsetWidth-tab.scrollLeft<=0)  
+			tab.scrollLeft-=tab1.offsetWidth  
+		else{  
+			tab.scrollLeft++;  
+		}   
+	}  
+	var MyMar=setInterval(Marquee,speed);  
+	tab.onmouseover=function() {clearInterval(MyMar)};  
+	tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};  
+</script>  
+</body>  
+</html>  

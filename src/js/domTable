@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>add&editTable</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#addUser").click(function(){
+/*************************************************************************************************/
+                //获取文本框的值
+                /*
+                 姓名：<input name="name" id="name" type="text"/>&nbsp;&nbsp;
+                 email:<input name="email" id="email" type="text"/>&nbsp;&nbsp;
+                 电话：<input name="tel" id="tel" type="text"/><br><br>
+                 */
+                var nameValue=$("#name").val();
+                var emailValue=$("#email").val();
+                var telValue=$("#tel").val();
+/*************************************************************************************************/
+                //创建td
+                var $nametd=$("<td/>");
+                var $nameInput=$("<input type='text' readonly='readonly'/>");
+                $nameInput.attr("value",nameValue);
+                $nametd.append($nameInput);
+
+                var $cboxtd=$("<td/>");
+                var $cboxInput=$("<input type='checkbox' />");
+                $cboxtd.append($cboxInput);
+
+                var $emailtd=$("<td/>");
+                $emailtd.text(emailValue);
+                var $teltd=$("<td/>");
+                $teltd.text(telValue);
+
+                var $a=$("<a></a>");
+                $a.attr("href","deleteEmp?id="+nameValue);
+                $a.text("Delete");
+
+                var $atd=$("<td/>");
+                $atd.append($a);
+
+                var  $editTd=$("<td/>");
+                $editTd.text("修改");
+
+/*************************************************************************************************/
+                //创建tr
+                var $tr=$("<tr/>");
+                $tr.append($cboxtd);
+                $tr.append($nametd);
+                $tr.append($emailtd);
+                $tr.append($teltd);
+                $tr.append($atd);
+                $tr.append($editTd);
+
+/*************************************************************************************************/
+                //在table上增加tr
+                <!-- <table id="usertable" border="1" cellpadding="5" cellspacing="0"> -->
+                $("#usertable").children().eq(0).append($tr);
+                console.log($("#usertable").children().eq(0));
+                /*************************************************************************************************/
+                //单个删除
+                $a.click(function(){
+                    return delTr($a);
+                });
+                //修改和保存操作
+                $editTd.click(function (){
+                    if($(this).parent().children().eq(5).text()=="修改"){
+                        console.log($(this).parent().children().children().eq(1).removeAttr("readonly"));
+                        $(this).parent().children().eq(5).text("保存");
+                    }else if($(this).parent().children().eq(5).text()=="保存"){
+                        $(this).parent().children().children().eq(1).attr("readonly",true);
+                        $(this).parent().children().eq(5).text("修改");
+                    }
+                })
+            });
+/*****************************************************************************/
+//          单个删除
+            function delTr($a){
+                var name=$a.parent().parent().children().eq(1).children().eq(0).val();
+                var flag=window.confirm("您真的要删除"+name+"这个用户吗？");
+                if(!flag){
+                    return false;
+                 }
+                $a.parent().parent().remove();
+                    return false;
+            };
+            <!--批量删除-->
+            <!--<input type="button" id="deleteId" value="删除">-->
+            $
+            $("#deleteId").click(function () {
+                $("#usertable input[type='checkbox']:checked").parent().parent().remove()
+            });
+
+            //<th><input type="checkbox" id="checkAll"></th>
+            /*全选*/
+            $("#checkAll").click(function(){
+                if($(this).prop("checked")==true){
+                    $("#usertable input[type='checkbox']").prop("checked",true);
+                }else{
+                    $("#usertable input[type='checkbox']").prop("checked",false);
+                }
+            })
+
+        });
+/*************************************************************************/
+
+    </script>
+    <style type="text/css"></style>
+</head>
+<body>
+<center>
+    <br><br>
+    添加用户：<br><br>
+    姓名：<input name="name" id="name" type="text"/>&nbsp;&nbsp;
+    email:<input name="email" id="email" type="text"/>&nbsp;&nbsp;
+    电话：<input name="tel" id="tel" type="text"/><br><br>
+    <button id="addUser">提交</button>
+    <!-- <input name="tel" id="tel" type="button" value="提交"/><br><br> -->
+    <br><br>
+    <hr>
+    <br><br>
+    <!--批量删除-->
+    <input type="button" id="deleteId" value="删除">
+    <hr>
+    <table id="usertable" border="1" cellpadding="5" cellspacing="0">
+        <tbody>
+            <tr>
+                <th><input type="checkbox" id="checkAll"></th>
+                <th>姓名</th>
+                <th>email</th>
+                <th>电话</th>
+                <th>操作</th>
+                <th>修改</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>tom</td>
+                <td>tom@tom.com</td>
+                <td>5000</td>
+                <td><a href="deleteEmp?id=Tom">Delete</a></td>
+                <td>修改</td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+</body>
+</html>

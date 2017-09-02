@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" 
+style="background-color:green;color:#ffffff;width:90px;height:20px;padding:40px;font-size:12px;">请点击这里</div>
+<script>
+function mDown(obj)
+{
+obj.style.backgroundColor="#1ec5e5";
+obj.innerHTML="请释放鼠标按钮"
+}
+function mUp(obj)
+{
+obj.style.backgroundColor="green";
+obj.innerHTML="请按下鼠标按钮"
+}
+</script>
+</body>
+</html>
+
+<html>
+<head><title>id按照上下文选择元素</title>
+ <style type="text/css">
+ <!--
+  #login{
+   background: url("bj_t.gif") no-repeat scroll 0 0 transparent;
+    left: 0;
+    top: 0;
+    border: 1px solid black;
+  }
+  .huiban{
+    color: #339966;
+    font:bold 15px/28px "宋体";
+    font-weight: bold;
+    width: 75px;
+    height: 19px;
+    margin-left: 65px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+  }
+ -->
+ </style>
+<script type="text/javascript"> 
+   function changecolor(color){
+	var body=document.getElementById("colorbody");
+	body.bgColor=color;
+   }
+</script>
+</head>
+<body onload="show()" id="colorbody">
+  <p>这是一本电子书：
+     <a href="a/ds.rar">数据结构——————c#</a>
+  </p>
+  <form action="" method="post" enctype="multipart/form-data">
+    <p>
+      请选择文件<br>
+      <input type="file" name="uploadfile" size="40">
+    </p>
+    <div>
+      <input type="submit" value="上传" name="Send">
+    </div>
+  </from>
+
+	<div id="login">
+	  <div class="huiban"></div>
+	</div>
+选取颜色
+<table border=1>
+  <tr height="24">
+    <td bgcolor="red" width="24" onclick="changecolor('red')"></td>
+    <td bgcolor="orange" width="24" onclick="changecolor('orange')"></td>
+    <td bgcolor="yellow" width="24" onclick="changecolor('yellow')"></td>
+    <td bgcolor="green" width="24" onclick="changecolor('green')"></td>
+    <td bgcolor="black" width="24" onclick="changecolor('black')"></td>
+    <td bgcolor="blue" width="24" onclick="changecolor('blue')"></td>
+    <td bgcolor="purple" width="24" onclick="changecolor('purple')"></td>
+  </tr>
+</table>
+<table id="" border=1 height="168" width="168">
+  <tr><td></td></tr>
+</table>
+</body>
+</html>
+

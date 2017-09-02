@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	// 数组去重
+		Array.prototype.distinct = function(){
+			var arr = this,
+					result = [],
+					i,
+					j,
+					len = arr.length;
+
+			for(i = 0; i < len; i++){
+					for(j = i + 1; j < len; j++){
+						debugger;
+							if(arr[i] === arr[j]){
+									j = ++i;
+							}
+					}
+					result.push(arr[i]);
+			}
+			return result;
+		}
+		var arra = [1,2,3,4,4,1,1,2,1,1,1];
+		arra.distinct();
+
+		Array.prototype.distinct = function (){
+			var arr = this,
+					i,
+					j,
+					len = arr.length;
+
+			for(i = 0; i < len; i++){
+					for(j = i + 1; j < len; j++){
+							if(arr[i] == arr[j]){
+								debugger;
+									arr.splice(j,1);
+									len--;
+									j--;
+							}
+					}
+			}
+			return arr;
+		};
+		var a = [1,1,2,3,4];
+		var b = a.distinct();
+	</script>
+</head>
+<body>
+<!-- 	<script>
+		var parents=[{id:"1",name:"Tove"},{id:"2",name:"jani"}];
+		var brothers=["stale","Kai","jim"];
+		var children=[{id:"3",name:"clone"}];
+		var xx=["tom"];
+		var family=parents.concat(brothers,children,xx);
+		console.log(brothers);
+		var obj={id:'4',name:"dada"};
+		family.push(obj);
+		console.log(family);
+	</script> -->
+	<script>
+		var america={
+		  name:'美国',
+		  city: '华盛顿市',
+		  detail: {
+		    total: {
+		      population: "65万",
+		       area: {
+		        number: "177平方公里"
+		      }
+		    }
+		  },
+		  goodPlace:['白宫','国会山','林肯纪念堂']
+		};
+		var china={
+		  name:'中国',
+		  city: '北京市',
+		  detail: {
+		    total: {
+		      population: "2151.6万人",
+		       area: {
+		        number: "1.641万平方千米"
+		      }
+		    }
+		  },
+		  goodPlace:['天安门','故宫','颐和园']
+		};
+		var japan={
+		  name:'日本',
+		  city: '东京',
+		  detail: {
+		    total: {
+		      population: "1333万",
+		       area: {
+		        number: "2188平方公里"
+		      }
+		    }
+		  },
+		  goodPlace:['东京塔','银座','东京迪斯尼']
+		};
+		var arr = [america,china,japan];
+		var obj={};
+		arr.map((key,index)=>{
+			console.log("map:" + index);
+			console.log(key);
+		})
+
+		for (var i=0;i<arr.length;i++) {
+			console.log(arr[i]);
+		}
+
+		delete arr[0];
+
+
+	</script>
+</body>
+</html>

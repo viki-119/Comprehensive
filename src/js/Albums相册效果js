@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>transform</title>
+<script>
+	function chpic(index){
+	var pics=["","1","2","3","4"];
+	var bigpic=document.getElementsByTagName("p")[0].children[0];
+	bigpic.src=pics[index] +".jpg";
+	}
+	
+</script>
+
+<style type="text/css">   
+	p body ul li img{padding:0px;}
+	ul li{list-style:none;float:left;}
+	p img{margin-left:60px;}
+</style>
+</head>
+<body>
+	<p><img src="1.jpg" alt="" /></p>
+	<ul>
+		<li><img src="11.jpg" onclick="chpic(1)" /></li>
+		<li><img src="22.jpg" onclick="chpic(2)" /></li>
+		<li><img src="33.jpg" onclick="chpic(3)" /></li>
+		<li><img src="44.jpg" onclick="chpic(4)" /></li>
+	</ul>
+</body>
+</html>

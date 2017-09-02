@@ -1,0 +1,33 @@
+<script>
+    //原生
+    //获取div距离顶部的距离
+    var mTop = document.getElementsByClassName('mdiv')[0].offsetTop;
+    //减去滚动条的高度
+    var sTop = document.body.scrollTop;
+    var result = mTop - sTop;
+    console.log(result);
+    //Jquery
+    mTop = $('.mdiv')[0].offsetTop;
+    sTop = $(window).scrollTop();
+    result = mTop - sTop;
+    console.log(result);
+</script>
+
+js删除css样式
+1、如果使用class加的样式的话，可以使用document.getElementById("objid").className=""来清空样式；   
+2、如果是直接加的style="***"属性的话，可以使用document.getElementById("box").style.cssText = ""来清空样式。
+
+window.onscroll =function(){
+	var imgdoc=document.getElementById("img");
+	if(imgdoc.offsetTop-document.body.scrollTop<0){
+		imgdoc.style.position="fixed";
+		imgdoc.style.top="0px"
+	}else{
+		imgdoc.style.position="";
+		imgdoc.style.top=""
+	}
+}
+
+
+吸顶的实现，jQuery实现
+http://www.cnblogs.com/snandy/p/3994713.html
