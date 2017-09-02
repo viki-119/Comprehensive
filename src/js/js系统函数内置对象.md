@@ -178,7 +178,6 @@ Date、Math、Number、Boolean、String、Array、RegExp、Function
    　　sin() 返回某数(以弧度为单位)的正弦值
    　　sqrt() 返回某数的平方根
    　　tan() 返回某数的正切值
-   /**************************************************************************************************************************/
 
 *根据Math.random方法，random默认返回(0,1)之间的随机，改进函数，接收两个参数，small,big;返回(small,big)之间的随机;
 
@@ -186,7 +185,7 @@ Date、Math、Number、Boolean、String、Array、RegExp、Function
     return (big-small)*Math.random()+small;
 }</pre>
 
-/**************************************************************************************************************************/
+
 !isNaN(parseFloat("123"))    可以判断123是数字
 
 三、Math.round(num) 与 NumberObject.toFixed(index)  的比较
