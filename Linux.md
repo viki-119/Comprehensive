@@ -4,30 +4,4 @@
 * [linux中怎么用命令打开文本文件？](http://zhidao.baidu.com/link?url=NfcTZ-nKnMTecC0c_BGHQ24m6A4ZE0xRgKOZdyTctjxKTQ-2goyNR2FWjuSFYbPsh3w-tkvsBM-ZWg1t3Lgjga)  
 * [ls命令](http://blog.csdn.net/gw569453350game/article/details/46472205)    
 
-### linux常用命令：
-mkdir 文件夹名 :这个是新建文件夹的命令  
-vi   以编辑的模式进入文件，如果没有相应的文件名则先创建这个文件，然后编辑模式；(如果不能编辑,按下i键试一下)
-编辑完成按esc键退出然后再输入如下命令;  
-:wq  保存并退出;:wq!  
-:q!  不保存并退出;  
 
-cat :由第一行开始显示文件内容  
-head：只看前几行；  
-tail：只看最后几行；
-
-rm -rf 目录名字:删除文件夹以及文件夹中的所有文件命令    
-rm -f 文件名:删除文件命令    
-rm 文件名:删除当前目录下的文件(注意：此操作不会把文件放到回收站而是直接删除)   
-
-pwd 指显示当前的路径;  
-ll  查看当前目录下的文件目录(详细信息);  
-ls  指查看当前目录下的目录;  
-ls -lh  # human readable,以 k/M 显示大小  
-ls -alh 查看当前目录下的文件(包括隐藏文件及文件夹);  
-ll –t  当前目录按时间顺序显示文件；  
-cd  ..  是返回上一级目录的意思；  
-cp /tmp/xxx.html  ./yyy.html :这个命令的意思是说把tmpt  目录下的xxx.html 文件copy到当前目录下并且把名字改为yyy.html   
-sudo 命令 后面一定要跟绝对路径  
-$PWD 是通配符  
-
-clear: 清屏命令,不是真正意义上的清屏.  

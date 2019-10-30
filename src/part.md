@@ -124,6 +124,8 @@ https://react.docschina.org/docs/create-a-new-react-app.html
 
 ### [eslint相关包](https://www.jianshu.com/p/39e8aad781ed)
 
+#### [eslint官网](http://eslint.cn/docs/user-guide/configuring#disabling-rules-with-inline-comments)
+
 * npm install eslint --save-dev  
 * npm install babel-eslint --save-dev
 * npm install eslint-config-airbnb --save-dev
@@ -133,3 +135,6 @@ https://react.docschina.org/docs/create-a-new-react-app.html
 * npm install eslint-plugin-jsx-a11y --save-dev
 * npm install eslint-plugin-react --save-dev
 
+### [git commit前检测husky与pre-commit](https://www.jianshu.com/p/f0d31f92bfab)
+
+查看全局安装的包：npm list -g --depth 0
