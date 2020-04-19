@@ -16,6 +16,15 @@
 ### 方法二
 * 先按Ctrl + K，然后放掉，紧接着再按 v，也能调出实时预览框。
 
+## vscode常用插件
+ > eslint  官网：https://eslint.org/  
+ > Sublime Text Keymap  
+ > babel es6/es7  
+ > editconfig for vscode  
+ > gitlens  
+ > material them  
+ > local history  
+
 ## [mac系统和windows系统如何键盘自定义设置](https://www.jianshu.com/p/314a9a1439f4)
 
 * 下载KeyTweak软件实现        

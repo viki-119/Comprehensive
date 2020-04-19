@@ -5,10 +5,10 @@ this.a = 312;
 console.log(window.a);//312
 * 一般函数的this
 ```js
-    function f1() {
-      return this;
-    };
-    console.log(f1() === window);//函数的this指代全局对象
+  function f1() {
+    return this;
+  };
+  console.log(f1() === window);//函数的this指代全局对象
   function f2() {
     "use strict"; //严格模式下this指代的是undefined
     return this;
