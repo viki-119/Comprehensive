@@ -34,6 +34,28 @@
  > stylelint  
  > Path Intellisense //输入路径时可以给予提示
 
+## vscode setting配置文件
+
+ ```jsx
+  {
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 24,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on", // 一行展示不全换行
+    "editor.fontLigatures": null,
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "emmet.excludeLanguages": [
+        "markdown"
+    ],
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
+ ```
+
 ## [mac系统和windows系统如何键盘自定义设置](https://www.jianshu.com/p/314a9a1439f4)
 
 * 下载KeyTweak软件实现
