@@ -32,7 +32,8 @@
  > markdownLint  
  > node Modules navigation  
  > stylelint  
- > Path Intellisense //输入路径时可以给予提示
+ > Path Intellisense //输入路径时可以给予提示  
+ > IntelliSense for CSS class names in HTML  //CSS 类名智能提示
 
 ## vscode setting配置文件
 

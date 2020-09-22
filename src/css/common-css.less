@@ -6,3 +6,20 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+// 给页面添加一个蒙层的解决方案
+// <div id="loading_page" class="loading_page"></div>
+.loading_page {
+  background-color: rgb(99, 96, 96);
+  width: 100%;
+  /* 
+  高度可以兜底一个100%
+  实际操作可以使用:
+  document.getElementById('loading_page').style.height = document.body.scrollHeight + 'px' */
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  z-index: 2
+}
