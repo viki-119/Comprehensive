@@ -5,9 +5,19 @@
     <title>border-radius</title>
     <style type="text/css">
         /* border-radius: 5px 4px 3px 2px; 四个半径值分别是左上角、右上角、右下角和左下角，顺时针 */ 
-        div.circle{display: block;height:100px;width:100px;background:red;border-radius:50px;/*四个圆角值都设置为宽度或高度值的一半*/}
+        /*四个圆角值都设置为宽度或高度值的一半*/
+        div.circle{
+          display: block;
+          height:100px;
+          width:100px;
+          background:red;
+          border-radius:50px;
+        }
         
-        #circle{margin:0 auto;width: 500px;}
+        #circle{
+          margin:0 auto;
+          width: 500px;
+        }
         #circle div{transition: all 0.35s;transform:translate(-200px,0px);}
         #circle div:nth-of-type(1){transition-delay: 0.15s}
         #circle div:nth-of-type(2){transition-delay: 0.10s}
