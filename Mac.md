@@ -1,31 +1,32 @@
 # Mac
 ##Mac快捷键：
-(option+) + Command + Delete  删除   
-Command + Shift + Delete  清空垃圾桶   
-Command + Shift + A  转到应用程序目录    
-Command + Shift + C  转到COMPUTER目录   
-Command + Shift + H  转到HOME目录
+(option+) + cmd + Delete  删除   
+cmd + Shift + Delete  清空垃圾桶   
+cmd + Shift + A  转到应用程序目录    
+cmd + Shift + C  转到COMPUTER目录   
+cmd + Shift + H  转到HOME目录
+cmd + shift + .  显示/隐藏 隐藏文件
 
 [Mac系统如何一键回到桌面方法一:](http://jingyan.baidu.com/article/2f9b480dbfbdf841cb6cc2b6.html)  
 [Mac系统如何一键回到桌面方法二:](http://bbs.feng.com/read-htm-tid-8127773.html)  
-Command + F3  回到桌面  相当于window下的 Win + D  
-Command+shift+F3  动画渐变回到桌面;  
+cmd + F3  回到桌面  相当于window下的 Win + D  
+cmd+shift+F3  动画渐变回到桌面;  
 F3 已经打开的窗口缩小展示在桌面  
 F4 进入launchpad界面  
 
-Command + option + power  锁屏  相当于 Win + L  
+cmd + option + power  锁屏  相当于 Win + L  
 Ctrl + shift + power 锁屏  相当于 Win + L  
 
-Command + 空格  输入法切换;  
+cmd + 空格  输入法切换;  
 Ctrl + . 切换中英文标点符号;  
-Command + C 复制;  
+cmd + C 复制;  
 mac文件夹怎么重命名：按下回车（Enter return）即可以重命名;  
 
 使用chrome用到的快捷键:  
-Command + R:  mac refresh browser;  
-Command + option + J/I chrome debugger 相当于 F12  
-Command + T 新开窗口  
-Command + W 关闭当前窗口  
+cmd + R:  mac refresh browser;  
+cmd + option + J/I chrome debugger 相当于 F12  
+cmd + T 新开窗口  
+cmd + W 关闭当前窗口  
 
 ##Mac使用小窍门
 -- [Mac如何自定义应用程序的快捷键?](http://www.macx.cn/thread-2133104-1-1.html)   

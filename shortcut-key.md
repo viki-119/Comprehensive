@@ -1,4 +1,11 @@
-npp快捷键   http://www.cnblogs.com/dudumao/p/3372561.html
+## css相关
+object-fit
+
+
+## 获取全局的npm安装地址
+npm config get prefix (获取npm全局安装地址)
+
+## npp快捷键   http://www.cnblogs.com/dudumao/p/3372561.html
 
 删除当前行  ctrl+L
 
