@@ -34,3 +34,5 @@ vscode插件开发-官网：
 <http://www.mamicode.com/info-detail-611316.html>
 
 * new commit
+
+* commit 2
