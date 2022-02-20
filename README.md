@@ -6,8 +6,7 @@
 
 #### strong and emphasize || #### strong and emphasize  
 
-![Mou icon](http://mouapp.com/Mou_128.png)  
-ssssss
+![Mou icon](http://mouapp.com/Mou_128.png)
 ====
 
 颜色选择器：
